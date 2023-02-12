@@ -517,7 +517,7 @@ a {
   margin-bottom: 4px;
   font-weight: 400;
   font-size: 12px;
-  line-height: 14px;
+  line-height: 1.166;
   letter-spacing: 0.01em;
   color: var(--customer-border);
 }
@@ -541,7 +541,7 @@ a {
 .wrap-comment::placeholder {
   font-weight: 400;
   font-size: 12px;
-  line-height: 16px;
+  line-height: 1.333;
   letter-spacing: 0.04em;
   color: rgba(117, 117, 117, 0.5);
 }
@@ -579,6 +579,7 @@ a {
   display: flex;
   align-items: baseline;
   justify-content: center;
+  margin-top: 16px;
 }
 .btn-send {
   width: 169px;
@@ -614,7 +615,14 @@ a {
 .footer-email {
   display: flex;
 }
-.footer-form_text {
+.footer-email::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer-form-text {
   display: block;
   margin-bottom: 16px;
   font-weight: 500;
@@ -647,6 +655,12 @@ a {
 .footer-date {
   background-color: var(--secondary-text-color);
   width: 264px;
+  height: 40px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
+}
+.subscribe-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
