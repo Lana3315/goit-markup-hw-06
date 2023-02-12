@@ -491,6 +491,11 @@ a {
   background-color: var(--button-border);
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
+.modal-btn:hover,
+.modal-btn:focus {
+  fill: var(--button-text-active);
+  background: var(--accent-link-color);
+}
 .backdrop.is-hidden {
   opacity: 0;
   visibility: hidden;
@@ -575,11 +580,42 @@ a {
   top: 11px;
   left: 16px;
 }
-.wrap-checkbox {
-  display: flex;
-  align-items: baseline;
+.check-wrap {
+  display: inline-flex;
   justify-content: center;
+  height: 16px;
   margin-top: 16px;
+}
+.check {
+  display: inline-flex;
+  justify-content: center;
+}
+.check-box {
+  display: inline-flex;
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+
+  border: 1.25px solid var(--secondary-text-color);
+  border-radius: 2px;
+  transition: background-color var(--animation) background-image
+    var(--animation);
+}
+.label--link {
+  display: inline-flex;
+  color: var(--accent-logo-color);
+  text-decoration: underline;
+}
+.checkbox-input:checked + .check-box {
+  fill: var(--button-text-active);
+  background-color: var(--accent-link-color);
+  background-image: url(../images/icons.svg/check.svg.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-origin: padding-box;
+
+  border: 1.25px solid var(--accent-link-color);
+  border-radius: 2px;
 }
 .btn-send {
   width: 169px;
@@ -604,10 +640,6 @@ a {
 .btn-send:hover,
 .btn-send:focus {
   background-color: var(--button-main-text);
-}
-.wrap-label--link {
-  color: var(--accent-logo-color);
-  text-decoration: underline;
 }
 .footer-form {
   margin-left: 80px;

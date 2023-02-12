@@ -564,13 +564,21 @@
               placeholder="Text input"
             ></textarea>
           </div>
-          <label class="wrap-checkbox"
-            ><input type="checkbox" name="policy" id="" />
-            <span class="wrap-label"
-              >I accept the terms and conditions of the
-              <a class="wrap-label--link" href="">Privacy Policy</a>
-            </span>
-          </label>
+          <div class="check-wrap">
+            <label class="check"
+              ><input
+                class="checkbox-input visually-hidden"
+                type="checkbox"
+                name="policy"
+                id=""
+              />
+              <span class="check-box"></span>
+              <span class="wrap-label"
+                >I accept the terms and conditions of the
+                <a class="label--link" href="#">Privacy Policy</a>
+              </span>
+            </label>
+          </div>
           <button class="btn-send" type="submit">Send</button>
         </form>
       </div>
