@@ -446,10 +446,6 @@ a {
 .media {
   color: var(--button-text-active);
 }
-.media:hover,
-.media:focus {
-  background: var(--hover-media);
-}
 .icon-links:hover,
 .icon-links:focus {
   background: var(--hover-media);
@@ -490,6 +486,7 @@ a {
   border-radius: 50%;
   background-color: var(--button-border);
   border: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
 }
 .modal-btn:hover,
 .modal-btn:focus {
@@ -516,10 +513,11 @@ a {
 .wrap-form + .wrap-form {
   margin-top: 8px;
 }
-
+.main-info {
+  margin-bottom: 4px;
+}
 .wrap-label {
   display: block;
-  margin-bottom: 4px;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.166;
@@ -530,6 +528,9 @@ a {
   margin-top: 8px;
 }
 .wrap-comment {
+  display: block;
+  padding-left: 16px;
+  padding-top: 8px;
   width: 100%;
   height: 120px;
   resize: none;
@@ -566,6 +567,7 @@ a {
   padding-left: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  transition: border var(--animation);
 }
 .wrap-input:focus {
   outline: none;
@@ -579,6 +581,7 @@ a {
   fill: var(--secondary-text-color);
   top: 11px;
   left: 16px;
+  transition: fill var(--animation);
 }
 .check-wrap {
   display: inline-flex;
@@ -611,10 +614,7 @@ a {
   background-color: var(--accent-link-color);
   background-image: url(../images/icons.svg/check.svg.svg);
   background-repeat: no-repeat;
-  background-size: contain;
-  background-origin: padding-box;
-
-  border: 1.25px solid var(--accent-link-color);
+  background-position: center;
   border-radius: 2px;
 }
 .btn-send {
@@ -631,6 +631,7 @@ a {
   border-color: var(--accent-logo-color);
   color: var(--button-text-active);
   transition: background-color var(--animation);
+  cursor: pointer;
 
   font-weight: 500;
   font-size: 16px;
@@ -678,6 +679,8 @@ a {
   border-color: var(--accent-logo-color);
   border-radius: 4px;
   transition: background-color var(--animation);
+  border: none;
+  cursor: pointer;
 }
 .btn-subscribe:hover,
 .btn-subscribe:focus {
@@ -685,11 +688,17 @@ a {
 }
 
 .footer-date {
-  background-color: var(--secondary-text-color);
   width: 264px;
   height: 40px;
+  color: var(--button-text-active);
+  background-color: var(--secondary-text-color);
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
+
+  padding-bottom: 8px;
+  padding-top: 8px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 .subscribe-text {
   display: flex;
